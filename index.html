@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/56125acec2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- Acá empieza el Nav -->
+  <nav class="navbar bg-light d-flex">
+    <div>
+      <i class="fa-brands fa-instagram fa-xl" style="margin-left: 10px"></i>
+      <a href="#" class="text-decoration-none text-dark" style="margin-left: 10px">Instagram</a>
+    </div>
+    <div>
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-success m-right" style="margin-right: 10px" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Create a New Post
+      </button>
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Create a New Post</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="form-floating">
+                <textarea class="form-control border border-secondary" placeholder="Leave a comment here" id="floatingTextarea2"
+                  style="height: 100px; border-top: none; border-left: none; border-right: none;"></textarea>
+                <label style="border:none; color: rgb(189, 189, 189);" for="floatingTextarea2">Add the caption of your post here</label>
+                <button type="button" class="btn btn-light btn-outline-secondary" style="margin-top: 10px">
+                  <i class="fa-solid fa-camera"></i>
+                </button>
+                <button type="button" class="btn btn-light btn-outline-secondary" style="margin-top: 10px">
+                  <i class="fa-solid fa-location-dot"></i>
+                </button>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dropdown btn-group m-right" style="margin-right: 10px">
+        <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="fa-solid fa-gear"></i>
+        </button>
+        <ul class="dropdown-menu"style="right: 0; left: auto;">
+          <li><a class="dropdown-item" href="#">Profile</a></li>
+          <li><a class="dropdown-item" href="#">Accessibility</a></li>
+          <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item text-danger" href="#">Logout</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Acá termina el Nav -->
+  <!-- botones -->
+  <ul class="nav nav-tabs d-flex justify-content-center" id="myTab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true"><i class="fas fa-th"></i></button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false"><i class="fa-solid fa-square"></i></button>
+    </li>
+   
+      
+  </ul>
+  <div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+      <div>
+        <div class="row">
+          <div class="col-lg-4">
+            <img src="https://thiscatdoesnotexist.com/" class="card-img-top" alt="..." style="margin: 10px 5px 5px 10px; height: 280px">
+          </div>
+          <div class="col-lg-4">
+            <img src="https://thispersondoesnotexist.com/image" class="card-img-top" alt="..." style="margin: 10px 5px 5px 10px; height: 280px">
+         </div>
+         <div class="col-lg-4">
+            <img src="https://thisartworkdoesnotexist.com/" class="card-img-top" alt="..." style="margin: 10px 5px 5px 10px; height: 280px">
+         </div>
+         <div class="col-lg-4">
+            <img src="https://thishorsedoesnotexist.com/" class="card-img-top" alt="..." style="margin: 10px 5px 5px 10px; height: 280px">
+         </div>
+          <div class="col-lg-4">
+             <img src="https://miro.medium.com/max/1100/1*lIqvwXgJ3BME6YLfUn9W1g.webp" class="card-img-top" alt="..." style="margin: 10px 5px 5px 10px; height: 280px">
+          </div>
+          <div class="col-lg-4">
+             <img src="https://assets.puzzlefactory.pl/puzzle/428/533/original.webp" class="card-img-top" alt="..." style="margin: 10px 5px 5px 10px; height: 280px">
+          </div>
+          <div class="col-lg-4">
+             <img src="https://s1.abcstatics.com/media/ciencia/2020/09/28/AdobeStock_192636089-ktHI--1248x698@abc.jpg" class="card-img-top" alt="..." style="margin: 10px 5px 5px 10px; height: 280px">
+          </div>
+          <div class="col-lg-4">
+             <img src="https://pbs.twimg.com/media/BDda9x0CEAE42b9?format=jpg&name=900x900" class="card-img-top" alt="..." style="margin: 10px 5px 5px 10px; height: 280px">
+          </div>
+          <div class="col-lg-4">
+             <img src="https://cdn.shortpixel.ai/spai/q_lossy+w_1200+to_webp+ret_img/https://eadn-wc03-103717.nxedge.io/cdn/wp-content/uploads/2021/03/pink-roses-in-glass-vase-a-guide-to-giving-flowers-at-a-difficult-time.jpg" class="card-img-top" alt="..." style="margin: 10px 5px 5px 10px; height: 280px">
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+      <!-- post1 -->
+      
+      <div class="card mx-auto mt-2" style="width: 18rem;">
+        <div style="display:flex; height: 50px; align-items: center;">
+          <h6 class="card-title">Un gatto nero</h6>
+          <p style="position: absolute; right: 10px; top: 10px">1/9</p>
+        </div>
+        <img src="https://thiscatdoesnotexist.com/" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-title"><small><b>916 Likes</b></small></p>
+          <p class="card-text">Sobre cada montaña, hay un sendero, aunque no se puede ver desde el valle.</p>
+        </div>
+      </div>
+
+      <div class="card mx-auto mt-2" style="width: 18rem;">
+        <div style="display:flex; height: 50px; align-items: center;">
+          <h6 class="card-title">El mismo que ayer</h6>
+          <p style="position: absolute; right: 10px; top: 10px">2/9</p>
+        </div>
+        <img src="https://thispersondoesnotexist.com/image" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-title"><small><b>607 Likes</b></small></p>
+          <p class="card-text">El concepto de persona ​ es principalmente filosófico, aunque también en sociología y psicología se expresa como la singularidad de cada individuo de la especie humana, ​​​ en contraposición al concepto filosófico de «naturaleza humana» que aborda lo supuestamente común que hay en ellos.</p>
+        </div>
+      </div>
+
+      <div class="card mx-auto mt-2" style="width: 18rem;">
+        <div style="display:flex; height: 50px; align-items: center;">
+          <h6 class="card-title">El arte que imita a la vida</h6>
+          <p style="position: absolute; right: 10px; top: 10px">3/9</p>
+        </div>
+        <img src="https://thisartworkdoesnotexist.com/" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-title"><small><b>409 Likes</b></small></p>
+          <p class="card-text">Todo buen artista pinta lo que él o ella es..</p>
+        </div>
+      </div>
+
+      <div class="card mx-auto mt-2" style="width: 18rem;">
+        <div style="display:flex; height: 50px; align-items: center;">
+          <h6 class="card-title">Bo Jack</h6>
+          <p style="position: absolute; right: 10px; top: 10px">4/9</p>
+        </div>
+        <img src="https://thishorsedoesnotexist.com/" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-title"><small><b>409 Likes</b></small></p>
+          <p class="card-text">Los caballos nos enseñan sobre respeto, trabajo duro, lidiar con la decepción y, por supuesto, sobre el amor</p>
+        </div>
+      </div>
+
+      <div class="card mx-auto mt-2" style="width: 18rem;">
+        <div style="display:flex; height: 50px; align-items: center;">
+          <h6 class="card-title">Cthulhu</h6>
+          <p style="position: absolute; right: 10px; top: 10px">5/9</p>
+        </div>
+        <img src="https://miro.medium.com/max/1100/1*lIqvwXgJ3BME6YLfUn9W1g.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-title"><small><b>523 Likes</b></small></p>
+          <p class="card-text">Llegará el día acordado,/ La fecha elegida./ En la que los astros alineados, /Lo traigan de vuelta a la vida.</p>
+        </div>
+      </div>
+
+      <div class="card mx-auto mt-2" style="width: 18rem;">
+        <div style="display:flex; height: 50px; align-items: center;">
+          <h6 class="card-title">Ojos de lince</h6>
+          <p style="position: absolute; right: 10px; top: 10px">6/9</p>
+        </div>
+        <img src="https://assets.puzzlefactory.pl/puzzle/428/533/original.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-title"><small><b>716 Likes</b></small></p>
+          <p class="card-text">Ojos de lince para ver el mundial</p>
+        </div>
+      </div>
+
+      <div class="card mx-auto mt-2" style="width: 18rem;">
+        <div style="display:flex; height: 50px; align-items: center;">
+          <h6 class="card-title">Nunca más</h6>
+          <p style="position: absolute; right: 10px; top: 10px">7/9</p>
+        </div>
+        <img src="https://s1.abcstatics.com/media/ciencia/2020/09/28/AdobeStock_192636089-ktHI--1248x698@abc.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-title"><small><b>558 Likes</b></small></p>
+          <p class="card-text">Y el cuervo inmóvil, fúnebre y adusto sigue siempre de Palas sobre el busto y bajo mi fanal, proyecta mancha lúgubre en la alfombra y su mirada de demonio asombra… ¡Ay! ¿Mi alma enlutada de su sombra se librará? ¡Jamás!</p>
+        </div>
+      </div>
+
+      <div class="card mx-auto mt-2" style="width: 18rem;">
+        <div style="display:flex; height: 50px; align-items: center;">
+          <h6 class="card-title">Share-Kan</h6>
+          <p style="position: absolute; right: 10px; top: 10px">8/9</p>
+        </div>
+        <img src="https://pbs.twimg.com/media/BDda9x0CEAE42b9?format=jpg&name=900x900" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-title"><small><b>901 Likes</b></small></p>
+          <p class="card-text">"Cambio de territorio de caza durante unos años, y todo el mundo se olvida de cómo funciona la Ley. Bueno, permitidme que os lo recuerde. Un cachorro de hombre se convierte en un hombre, y ¡el hombre está prohibido!"</p>
+        </div>
+      </div>
+
+      <div class="card mx-auto mt-2" style="width: 18rem;">
+        <div style="display:flex; height: 50px; align-items: center;">
+          <h6 class="card-title">Flores del mal</h6>
+          <p style="position: absolute; right: 10px; top: 10px">9/9</p>
+        </div>
+        <img src="https://cdn.shortpixel.ai/spai/q_lossy+w_1200+to_webp+ret_img/https://eadn-wc03-103717.nxedge.io/cdn/wp-content/uploads/2021/03/pink-roses-in-glass-vase-a-guide-to-giving-flowers-at-a-difficult-time.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-title"><small><b>554 Likes</b></small></p>
+          <p class="card-text">Hace brotar el manantial y florecer el desierto ante estos viajeros, para los que está abierto el imperio familiar de las tinieblas futuras.</p>
+        </div>
+      </div>
+
+    </div>
+
+    
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+</body>
+</html>
